@@ -1,0 +1,717 @@
+body {
+	padding:0;
+	margin:0; 
+	background-color:white;
+}
+
+.redText{
+	color: #ff0000;
+}
+
+a.redLink {
+	color: #ff0000;
+}
+a.redLink:hover {
+	color: #ff6060;
+} 
+
+a {
+	color: #000000;
+}
+a:hover {
+	color: #606060;
+/*	background-color:#e0e0ff;*/
+} 
+
+
+.RegLogin {
+	padding-top:17;
+	padding-left:26;
+	padding-bottom:0;
+	font-family:arial;
+	font-size:12;
+	color:black;
+	line-height: 150%;
+}
+
+
+.LoginForm {
+	margin:0; 
+	padding-top:10;
+	padding-left:120;
+}
+
+.LoginLabel {
+	color:black; 
+	font-size:12;
+	font-weight:normal; 
+}
+
+.LoginInput {
+	width:100;
+	height:20;
+	border:#B3B3B5 1px solid;
+}
+
+.LoginButton {
+}
+
+
+/*------------------------------------------------------*/
+
+.DbTableHeader {
+	background-color:#B1CFEF;
+	padding-left:7;
+	padding-right:7;
+	font-family:arial;
+	font-size:12;
+	font-weight:bold; 
+}
+
+.DbTableSider {
+	background-color:#D0E2F5;
+	padding-left:7;
+	padding-right:7;
+	font-family:arial;
+	font-size:12;
+	font-weight:bold; 
+}
+
+.DbTableCell {
+border-color:#0050c0;
+/* border:#0050c0 1px solid;
+border-width:2;*/
+	padding-left:7;
+	padding-right:7;
+				padding-top:3;padding-bottom:3;
+	font-family:arial;
+	font-size:12;
+}
+
+
+/*------------------------------------------------------*/
+
+.BannerPane {
+	background-color:white; 
+	height:150;
+
+	background-image: url(syspictures/Top5.jpg);
+	background-repeat: no-repeat;
+	background-color:white; 
+}
+
+.MenuPane {
+	width:233;
+
+background-color:#5BA2E2;
+background-image: url(syspictures/LeftTile.jpg);
+background-repeat: y-repeat;
+background-position: 0px 0px;
+}
+
+.RightPane {
+	width:210;
+	padding-left:30;
+	background-image: url(syspictures/rightGrad.png);
+	background-repeat: no-repeat;
+	background-color:white; 
+}
+
+.MainTopPane {
+	height:55;
+	background-color:white; 
+	background-image: url(syspictures/MainTopGrad1.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+}
+
+.MainText {
+	font-family:verdana;
+	font-size:12;
+	line-height: 150%;
+}
+
+.MainPane {
+	padding-left:20;
+	padding-top:0;
+	padding-right:20;
+	padding-bottom:70;
+
+	color:black; 
+	background-color:white; 
+
+	font-family:verdana;
+	font-size:12;
+	line-height: 150%;
+
+        
+	background-image: url(syspictures/MainTopGrad1.png);
+	background-repeat: no-repeat;
+	background-position: 0px -55px;
+}
+
+.NewsItem {
+	color:black; 
+
+	font-family:verdana;
+	font-size:12;
+	line-height: 120%;
+}
+
+H1 {
+	padding-left:100;
+	margin-bottom:19;
+	color:#D00107;
+	font-family:arial;
+	font-size:18;
+	font-weight:normal; 
+}
+
+H2 {
+	margin-top:15;
+	margin-bottom:5;
+	font-family:verdana;
+	font-size:12;
+	font-weight:bold; 
+}
+
+H2.red  {
+	color:#D00107;
+}
+
+.MenuDiv {
+	padding-left:12; 
+	padding-top:35; 
+	padding-right:17; 
+background-image: url(syspictures/LeftTop.jpg);
+background-repeat: no-repeat;
+background-position: 0px 0px;
+}
+
+div.MiniConsoleDiv {
+	padding-left:12; 
+	padding-top:35; 
+	padding-right:17; 
+}
+.MiniConsoleDiv {
+	font-size:12;
+}
+
+.MenuTable {
+	width:221;
+}
+
+td.MenuItem1,td.MenuItem1s {
+	background-color:white;
+	padding-left:26;
+	font-weight:bold; 
+	font-family:arial;
+	font-size:14;
+	padding-top:3;
+}
+
+.MenuItem1 {
+	color:#2286E8;
+}
+
+.MenuItem1s {
+	color:#D00107;
+}
+
+td.MenuItem2, td.MenuItem2s {
+	background-color:white; 
+	padding-left:36;
+  padding-top:3;
+	font-family:arial;
+	font-size:12;
+}
+
+.MenuItem2 {
+	color:#2286E8;
+}
+
+.MenuItem2s {
+	color:#D00107;
+}
+
+td.MenuItem3, td.MenuItem3s {
+	background-color:white; 
+	padding-left:46;
+	font-family:arial;
+	font-size:12;
+}
+
+.MenuItem3 {
+	color:#2286E8;
+}
+
+.MenuItem3s {
+	color:#D00107;
+}
+
+.ForumPosterOuter {
+	padding:10;
+}
+
+table.ForumPoster {
+	border:#6060a0 1px solid;
+	background-color:#E3EEF9;
+}
+
+td.ForumPoster {
+	padding-top:20;
+	padding-left:20;
+	padding-right:20;
+	padding-bottom:20;
+}
+
+.ForumPosterButton {
+	border-color:#B1CFEF;
+	background-color:#B1CFEF;
+	width:80;
+	margin-right:10;
+	font-weight:normal;
+}
+
+.ForumPath {
+	padding-bottom:15;
+	font-family:arial;
+	font-size:12;
+}
+
+.ForumPathLink {
+	color:black;
+	font-weight:normal
+}
+
+.ForumPathNoLink {
+	color:black;
+	font-weight:bold
+}
+
+.ForumTableHeader_board {
+	/*border:black 1px solid;*/
+	color:black;
+	font-family:arial;
+	font-size:14;
+	background-color:#9BC2EA;
+padding-left:20;
+padding-right:20;
+padding-top:5;
+padding-bottom:5;
+}
+
+.ForumTableRow_board {
+	/*border:black 1px solid;*/
+	color:#D6E6F6;
+	font-family:arial;
+	font-size:14;
+	background-color:#56A0E2
+}
+
+.ForumTableRow_section {
+	/*border:black 1px solid;*/
+	color:black;
+	font-family:arial;
+	font-size:14;
+	background-color:#B1CFEF;
+padding-left:20;
+padding-right:20;
+padding-top:10;
+padding-bottom:10;
+}
+
+.ForumTableRow_section_title,.ForumTableRow_section_title0, .ForumTableRow_section_title1 {
+	color:black; /* may be redefined later */
+}
+
+.ForumTableHeader_topic {
+	/*border:black 1px solid;*/
+	background-color:#9BC2EA;
+	font-family:arial;
+	font-size:14;
+padding-left:20;
+padding-right:20;
+padding-top:5;
+padding-bottom:5;
+}
+
+.ForumTableRow_topic {
+	/*border:black 1px solid;*/
+	background-color:#B1CFEF;
+	font-family:arial;
+	font-size:14;
+padding-left:20;
+padding-right:20;
+padding-top:10;
+padding-bottom:10;
+}
+
+.ForumTableRow_topic_title,.ForumTableRow_topic_title0, .ForumTableRow_topic_title1 {
+	color:black;
+}
+
+
+.ForumTableRow_section_title1, .ForumTableRow_topic_title1 {
+	color:#0000ff;
+}
+
+.ForumTableRow_post1 {
+	background-color:#9BC2EA
+}
+
+.ForumTableRow_post2 {
+	background-color:#B1CFEF
+}
+
+.ForumTableRow_post3 {
+	background-color:white;
+	font-family:arial;
+	font-size:14;
+}
+
+.moderatorial {
+	color:#ff0000;
+}
+
+.RegInput {
+	width:300
+}
+
+div.Anons {
+	margin-bottom:30;
+}
+
+.Anons {
+	color:black;
+	font-family:verdana;
+	font-size:12;
+	line-height: 120%;
+}
+
+
+.AnonsTextArea {
+	width:600;
+	height:250;
+}
+
+
+.editLink {
+	color:green;
+	font-size:12;
+	text-decoration: underline;
+}
+.editLink:hover {
+	color:#608060;
+	font-size:12;
+	text-decoration: underline;
+}
+
+.Nick {
+	color:darkblue;
+	font-weight:bold;
+}
+
+.Calendar {
+	font-family:verdana;
+	font-size:12;
+	line-height: 120%;
+}
+
+.CalendarTop {
+	background-color:#6FACE4;
+	font-weight:bold;
+}
+
+.pageLink {
+	color:#2286E8;
+}
+
+.Registration {
+	background-color:#B1CFEF;
+	font-family:verdana;
+	font-size:14;
+	line-height: 120%;
+}
+
+td.RegL {
+        vertical-align:top;
+	font-size:14;
+	padding-left:10;
+	padding-right:10;
+}
+
+td.RegR {
+        vertical-align:top;
+	font-size:12;
+	padding-left:10;
+	padding-right:10;
+}
+
+
+.ProfileHeader {
+	background-color:#9BC2EA;
+	font-family:arial;
+	font-size:14;
+}
+
+.ProfileBody {
+	background-color:#B1CFEF;
+	font-family:arial;
+	font-size:14;
+	padding-top:20;
+	padding-left:20;
+	padding-bottom:20;
+}
+
+.pcBtn {
+	height:20;
+	font-size:12;
+	padding-top:-3;
+}
+
+.pcA {
+	padding-left:10;
+	padding-right:10;
+	border-left:#56A0E2 1px solid;
+	border-right: #56A0E2 1px solid;
+	border-top :#56A0E2 1px solid;
+}
+.pcAl {
+	padding-left:10;
+	padding-right:10;
+	padding-top:10;
+	border-left:#56A0E2 1px solid;
+	border-top :#56A0E2 1px solid;
+}
+.pcAr {
+	padding-left:10;
+	padding-right:10;
+	border-right: #56A0E2 1px solid;
+	border-top :#56A0E2 1px solid;
+}
+
+.pcBl {
+	padding-left:10;
+	padding-right:10;
+	border-left:#56A0E2 1px solid;
+}
+.pcBr {
+	padding-left:10;
+	padding-right:10;
+	border-right: #56A0E2 1px solid;
+}
+
+.pcCl {
+	padding-left:10;
+	padding-right:10;
+	padding-bottom:10;
+	border-left:#56A0E2 1px solid;
+	border-bottom :#56A0E2 1px solid;
+}
+.pcCr {
+	padding-left:10;
+	padding-right:10;
+	border-right: #56A0E2 1px solid;
+	border-bottom:#56A0E2 1px solid;
+}
+.pcl,.pcr {
+	padding-left:10;
+	padding-right:10;
+}
+
+p.Indent{
+	text-indent:40;
+}
+
+p.Signature{
+	padding-left:50;
+}
+
+td.regLabel {
+	font-family:verdana;
+	font-size:12;
+	font-weight:bold;
+	line-height: 150%;
+	padding-left:0;
+	padding-top:0;
+	padding-right:15;
+	padding-bottom:0;
+	height:30;
+}
+
+.regInput1 {
+	width:150;
+}
+
+.regInput2 {
+	width:320;
+}
+
+.tip {
+	position:absolute;
+	border:#404040 1px solid;
+/*
+	background-color:white;
+	background-color:#E9F1FA;
+*/
+	background-color:#E3EEF9;
+
+	visibility:hidden;
+	overflow:auto;
+}
+
+.tipSel {
+	border:none;
+	background-color:#B1CFEF;
+}
+
+.DataCell,.DataCellRed,.DataCellGray,.HeaderCell, .CompCell {
+	font-family:verdana;
+	font-size:12;
+	line-height: 150%;
+	padding-left:10;
+	padding-right:10;
+}
+.DataCellRed {
+	color:red;
+}
+.DataCellGray {
+	color:#707070;
+}
+.HeaderCell {
+	background-color:#B1CFEF;
+	font-weight:bold;
+}
+
+div.undotted {
+	float:left;
+	background-color:white;
+}
+
+div.dotted {
+	background-image:url("syspictures/dotLine.png");
+}
+
+div.dottedRed {
+	background-image:url("syspictures/dotLineRed.png");
+}
+
+/*------------------------------------------------------*/
+
+
+.MsgListHeader,.MsgListCell {
+	padding-left:10;
+	padding-right:10;
+	padding-top:4;
+	padding-bottom:4;
+	font-family:arial;
+	font-size:14;
+}
+
+.MsgListHeader {
+	background-color:#B1CFEF;
+	font-size:12;
+	font-weight:bold; 
+}
+
+/*------------------------------------------------------*/
+
+.fillFrame {
+	border:#B3B3B5 1px solid;
+	background-color:#D5E5F4;
+  padding:20;
+  width:370;
+}
+
+.fillCaption {
+  font-weight: bold;
+  font-size:14;
+  padding-bottom:10;
+}
+
+.fillSubCaption {
+  font-size:10;
+  font-weight: normal;
+}
+
+.fillLink {
+  font-size:12;
+  color:#2286E8;
+}
+
+/*------------------------------------------------------*/
+.tipScore {
+	font-size:20px;
+	font-weight:bold;
+	padding-right:5px;
+	color:#e00000;
+}
+.tipJudge {
+	font-size:18px;
+	color:#000080;
+}
+/*------------------------------------------------------*/
+
+.ratingLevel {
+	cursor:default;
+	color:red;
+	font-weight:bold;
+	padding-left:3px;
+	padding-right:3px;
+}
+
+/*-----------------*/
+
+.separatorLevel {
+	cursor:default;
+	color:blue;
+	font-weight:bold;
+	padding-left:3px;
+	padding-right:3px;
+}
+
+/*------------------------------------------------------*/
+
+.separatorA {
+	font-weight:bold;
+}
+
+.separator, .separatorB {
+	font-weight:bold;
+	font-style:italic;
+}
+
+.separatorC {
+	font-weight:bold;
+	font-style:italic;
+	color:#4040a0;
+}
+
+/*------------------------------------------------------*/
+
+.linkCell {
+	padding-right:40px;
+	padding-top:20px;
+	padding-bottom:40px;
+}
+
+.linkCellCtrlSize {
+	width:150px;
+}
+
+.linkCellCtrlSize2 {
+	width:300px;
+}
+
+/*------------------------------------------------------*/
+
+.twinHilite {
+	color:red;
+}
+
+.twinHilite  A {
+	color:red;
+}
+
+/*------------------------------------------------------*/

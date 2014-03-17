@@ -1,0 +1,92 @@
+/*------------------------------------------------------*/
+
+@media print {
+
+	.printControl,.printControl A {
+		display:none;
+	}
+	
+}
+
+@media screen {
+
+	.printControl,.printControl A {
+	/*	color:#8080ff;*/
+		color:#000080;
+	}
+	
+}
+
+/*------------------------------------------------------*/
+
+.stroke {
+	border-left:1px black solid;
+	border-right:1px black solid;
+	font-size:1px;
+}
+
+/*------------------------------------------------------*/
+
+.cell {
+	padding:0;
+	overflow:hidden;
+	float:left;
+}
+
+.cellIn {
+	text-align:center;
+/*	margin-top:1mm;*/
+	margin-left:2mm;
+	margin-right:2mm;
+	border:1px red none;
+}
+
+.fullBorder {
+	border:1px black solid;
+	/*margin-right:-1px;*/
+}
+
+.rtbBorder {
+	border-right:1px black solid;
+	border-top:1px black solid;
+	border-bottom:1px black solid;
+	/*margin-left:-1px;*/
+}
+
+.rBorder {
+	border-right:1px black solid;
+	border-top:1px #808080 dotted;
+	border-bottom:1px #c0c0c0 dotted;
+}
+
+/*------------------------------------------------------*/
+
+.eventName {
+	margin:1.5mm;
+	font-family:arial;
+	font-size:4.5mm;
+	font-weight:bold;
+}
+
+.compName {
+	margin:0.5mm;
+	font-family:arial;
+	font-size:3.5mm;
+	font-weight:bold;
+}
+
+.eventDate {
+	margin:0.5mm;
+	font-family:arial;
+	font-size:4mm;
+	font-weight:normal;
+}
+
+.eventPlace {
+	margin:0.5mm;
+	font-family:arial;
+	font-size:4mm;
+	font-weight:normal;
+}
+
+/*------------------------------------------------------*/
