@@ -129,7 +129,9 @@ function makeRegForm( $idComp, $couples ) {
 
 function makeRoundForm( $idComp, $couples, $scores, $roundLevel ) {
 //die("$roundLevel");
-	if( !is_int($roundLevel) ) {
+	$isPoints = !is_int($roundLevel);
+
+	if( $isPoints ) {
 		$button = "Scores";
 	}
 	else {
@@ -147,7 +149,14 @@ function makeRoundForm( $idComp, $couples, $scores, $roundLevel ) {
 	$s .= "<input type=hidden name=dbf_round value=$roundLevel>\r\n";
 
 	$s .= "<input type=hidden name=number value='$scores->number'>\r\n";
-	$s .= "<input type=hidden name=place value='$scores->place'>\r\n";
+	
+	if( $isPoints ) {
+		$s .= "<input type=hidden name=place value='$scores->points'>\r\n";
+	}
+	else {
+		$s .= "<input type=hidden name=place value='$scores->place'>\r\n";
+	}
+	
 	$s .= "<input type=hidden name=ndances value='$ndances'>\r\n";
 	$s .= "<input type=hidden name=dances value='$sdances'>\r\n";
 	
@@ -203,9 +212,11 @@ function prepareRound( $dmlRound ) {
 		//print_r($res);  
 		if( ! in_array($res->number,$obj->numbers) ) {
 			$obj->numbers[] = $res->number;
-			//$obj->places[] = $res->place;
 			$obj->number .= $res->number . "\r\n";
 			$obj->place .= $res->place . "\r\n";
+			
+			$points = str_replace( ",", ".", $res->sum );
+			$obj->points .= $points . "\r\n";
 		}
 	}
 	
@@ -252,6 +263,7 @@ function prepareCouples( $dmlGroup, $dbGroup ) {
 	$obj->man = "";
 	$obj->lady = "";
 	$obj->place = "";
+	$obj->points = "";
 	$obj->country = "";
 	$obj->city = "";
 	$obj->club = "";
@@ -266,13 +278,11 @@ function prepareCouples( $dmlGroup, $dbGroup ) {
 		$obj->man .= "$man->surname $man->name\r\n";
 		$obj->lady .= "$lady->surname $lady->name\r\n";
 		
-		if( $dbGroup->regType == 'solo' ) {
-			$points = str_replace( ",", ".", $couple->points );
-			$obj->place  .= "$points\r\n";
-		}
-		else {
-			$obj->place  .= "$couple->place\r\n";
-		}
+		//if( $dbGroup->regType == 'solo' ) {
+		$points = str_replace( ",", ".", $couple->points );
+		$obj->points  .= "$points\r\n";
+		
+		$obj->place  .= "$couple->place\r\n";
 		
 		$obj->country  .= "$couple->country\r\n";
 		$obj->city  .= "$couple->city\r\n";
@@ -280,6 +290,7 @@ function prepareCouples( $dmlGroup, $dbGroup ) {
 		$obj->teacher  .= "$couple->teacher\r\n";
 		//echo "$number, $man->surname, $man->name<br>";
 	}
+	
 	return $obj;
 }
 
@@ -303,7 +314,7 @@ function makeCompetitionForm( $idEvent, $dmlGroupId ) {
 	foreach( $dbGroups as $dbGroupId=>$dbGroupLabel ) {
 		$options .= "<option value=$dbGroupId>$dbGroupLabel";
 	}
-	$selector = "<select size=35 multiple name=dbGroupIds[]>$options</select>";
+	$selector = "<select size=45 multiple name=dbGroupIds[]>$options</select>";
 	
 	$s .= $selector . "<p>";
 	
@@ -358,7 +369,7 @@ function makeSelectForm($idEvent) {
 	//$s .= "<input type=hidden name=id value=$idEvent>";
 	//$s .= "<table border=1 cellspacing=0>\r\n";
 	foreach( $dmlGroups as $dmlGroupId=>$dmlGroupLabel ) {
-		$s .= "<A href='loadDml.php?id=$idEvent&dmlGroupId=$dmlGroupId'>$dmlGroupLabel</a><br>\r\n";
+		$s .= "<A target=_blank href='loadDml.php?id=$idEvent&dmlGroupId=$dmlGroupId'>$dmlGroupLabel</a><br>\r\n";
 	}
 	return $s;
 }
