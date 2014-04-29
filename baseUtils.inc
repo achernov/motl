@@ -208,6 +208,7 @@ class BaseComparator {
 			}
 		}
 		
+		sort($ids);
 		$out_ids = implode(",",$ids);
 
 		if( $simple ) {
@@ -276,6 +277,7 @@ class BaseComparator {
 			$s.= "INSERT INTO $table($sfs) VALUES($svs);$nl";
 		}
 		
+		sort($ids);
 		$out_ids = implode(",",$ids);
 
 		return $s;
@@ -344,6 +346,7 @@ class BaseComparator {
 			$s.= "UPDATE $table SET $sus WHERE $idCond;$nl";
 		}
 		
+		sort($ids);
 		$out_ids = implode(",",$ids);
 
 		return $s;

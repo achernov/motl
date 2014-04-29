@@ -183,7 +183,8 @@ class DbEventProducerFull extends DbEventProducer {
     $thisId = $this->row->id;
     $returl = Motl::makeRetUrl();
     $initLink = "<A class='editLink' href='initEvent.php?id=$thisId&returl=$returl'>Init</a>";
-    $s .= $this->MakeText( $this->row, "[editbar|edit,add,sort|&nbsp;&nbsp;$initLink<p>]" );
+    $dmlLink = "<A class='editLink' href='loadDml.php?id=$thisId&returl=$returl'>Load DanceML</a>";
+    $s .= $this->MakeText( $this->row, "[editbar|edit,add,sort|&nbsp;&nbsp;$initLink&nbsp;&nbsp;$dmlLink<p>]" );
     
     $mode    = substr($param,0,1);
     $submode = isset( $this->aid[2] ) ? $this->aid[2] : "";
