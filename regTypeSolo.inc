@@ -904,7 +904,9 @@ class RegTypeHandlerSolo extends RegTypeHandler {
 
 		  $coupleRow = array();
 
-		  $coupleRow['place'] = $this->arrayItem($place,$k);
+
+//		  $coupleRow['place'] = $this->arrayItem($place,$k);
+		  $coupleRow['place'] = str_replace( ",", ".", $this->arrayItem($place,$k) );
 		  
 		  for( $i=0; $i<$ndances; $i++ ) {
 			$d = $i+1;

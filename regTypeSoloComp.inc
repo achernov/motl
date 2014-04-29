@@ -266,6 +266,10 @@ class RegTypeHandlerSoloComp extends RegTypeHandler {
   
   private function makeColumns( $enableBaseLink = false ) {
 
+  	if( getLocalSetting('DISABLE_BASE_LINK') ) {
+		$enableBaseLink = false;
+	}
+
     $obj = new stdClass();
     
     if( $enableBaseLink ) {

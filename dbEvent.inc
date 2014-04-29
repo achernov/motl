@@ -863,6 +863,7 @@ class DbEventProducerFull extends DbEventProducer {
 	}
 	else
     if( $prog == "st" ) {
+    
       switch( $classCode ) {
         case 'n':
           return "Вальс,Квикстеп";
@@ -934,8 +935,11 @@ class DbEventProducerFull extends DbEventProducer {
         case 'e':
           return "Вальс,Венский вальс,Квикстеп,Ча-ча-ча,Румба,Джайв";
           
-        case 'sn6':
         case 'es':
+        case 'sn6':
+        case 'n6':
+        case 'sn6s':
+        case 'n6s':
           return "Вальс,Венский вальс,Квикстеп,Ча-ча-ча,Самба,Джайв";
           
         case 'et':
@@ -944,18 +948,35 @@ class DbEventProducerFull extends DbEventProducer {
         case 'd':
           return "Вальс,Танго,Венский вальс,Квикстеп,Ча-ча-ча,Самба,Румба,Джайв";
 		  
-		case 'sc_p': case 'cc_p':	return "Полька";
-		case 'sc_w': case 'cc_w':	return "Медленный вальс";
-		case 'sc_q': case 'cc_q':	return "Квикстеп";
-		case 'sc_c': case 'cc_c':	return "Ча-ча-ча";
-		case 'sc_s': case 'cc_s':	return "Самба";
-		case 'sc_r': case 'cc_r':	return "Румба";
-		case 'sc_j': case 'cc_j':	return "Джайв";
+
+		case 'cc_p':
+		case 'sc_p':	 return "Полька";
+
+		case 'cc_w':
+		case 'sc_w':	 return "Медленный вальс";
+
+		case 'cc_q':
+		case 'sc_q':	 return "Квикстеп";
+
+		case 'cc_c':
+		case 'sc_c':	 return "Ча-ча-ча";
+
+		case 'cc_s':
+		case 'sc_s':	 return "Самба";
+
+		case 'cc_r':
+		case 'sc_r':	 return "Румба";
+
+		case 'cc_j':
+		case 'sc_j':	 return "Джайв";
       }
       
     }
 
 	switch( $groupCode ) {
+		case 'juv1s': 
+			return "Вальс,Венский вальс,Квикстеп,Ча-ча-ча,Самба,Джайв";
+		
 		case 'juv1': 
 		case 'juv.6': 
 			return "Вальс,Венский вальс,Квикстеп,Ча-ча-ча,Румба,Джайв";

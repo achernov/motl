@@ -26,6 +26,7 @@ class FeedbackProducer extends Producer {
       case 'pokrovskaya':   return 'Яна Покровская';
       case 'pozharinskiy':  return 'Сергей Пожаринский';
       case 'shnyrev':       return 'Владимир Шнырев';
+      case 'tudinov':       return 'Сергей Тудинов';
     }
     return null;
   }
@@ -48,6 +49,7 @@ class FeedbackProducer extends Producer {
       case 'pokrovskaya':   return 'yanikkoz@list.ru';
       case 'pozharinskiy':  return 'SergioPo@bk.ru';
       case 'shnyrev':       return 'v_shnyrev@mail.ru';
+      case 'tudinov':       return 'latinad@mail.ru';
     }
     return null;
   }
